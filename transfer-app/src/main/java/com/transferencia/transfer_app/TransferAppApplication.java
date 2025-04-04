@@ -1,32 +1,32 @@
 package com.transferencia.transfer_app;
 
-import com.transferencia.transfer_app.model.Cuenta;
+/*import com.transferencia.transfer_app.model.Cuenta;
 import com.transferencia.transfer_app.repository.CuentaRepository;
 import com.transferencia.transfer_app.service.TransferenciaService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.CommandLineRunner; */
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.math.BigDecimal;
+/*import java.math.BigDecimal;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;*/
 
 @SpringBootApplication
-public class TransferAppApplication implements CommandLineRunner {
+public class TransferAppApplication /*implements CommandLineRunner*/ {
 
-	@Autowired
+	/*@Autowired
 	private TransferenciaService transferenciaService;
 
 	@Autowired
-	private CuentaRepository cuentaRepository;
+	private CuentaRepository cuentaRepository;*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(TransferAppApplication.class, args);
 	}
 
-	@Override
+	/*@Override
 	public void run(String... args) {
 		ExecutorService executor = Executors.newFixedThreadPool(30); // 30 hilos
 		BigDecimal monto = new BigDecimal("5");
@@ -51,5 +51,5 @@ public class TransferAppApplication implements CommandLineRunner {
 
 		System.out.println("Cuenta abc: $" + (cuentaA != null ? cuentaA.getMonto() : "No encontrada"));
 		System.out.println("Cuenta cbd: $" + (cuentaB != null ? cuentaB.getMonto() : "No encontrada"));
-	}
+	}*/
 }

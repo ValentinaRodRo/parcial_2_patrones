@@ -55,14 +55,29 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+		<!-- lookup parent from repository
+		<dependency>
+			<groupId>com.newrelic.agent.java</groupId>
+			<artifactId>newrelic-java</artifactId>
+			<version>8.19.0</version>
+			<scope>provided</scope>
+			<type>zip</type> 
+		</dependency> -->
+		<dependency>
+			<groupId>com.newrelic.agent.java</groupId>
+			<artifactId>newrelic-api</artifactId>
+			<version>8.19.0</version> <!-- O la versión más reciente disponible -->
+			<scope>provided</scope>
+		</dependency>
 
+	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
 		</plugins>
 	</build>
 
